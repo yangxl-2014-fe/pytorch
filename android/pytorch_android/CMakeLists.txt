@@ -98,6 +98,7 @@ if(ANDROID_ABI)
   import_static_lib(libnnpack)
   import_static_lib(libXNNPACK)
   import_static_lib(libpytorch_qnnpack)
+  import_static_lib(libpthreadpool)
   import_static_lib(libeigen_blas)
   import_static_lib(libcpuinfo)
   import_static_lib(libclog)
@@ -114,6 +115,7 @@ if(ANDROID_ABI)
       libnnpack
       libXNNPACK
       libpytorch_qnnpack
+      libpthreadpool
       libeigen_blas
       libcpuinfo
       libclog
@@ -128,6 +130,7 @@ else()
       nnpack
       XNNPACK
       pytorch_qnnpack
+      pthreadpool
       cpuinfo
       clog
   )
